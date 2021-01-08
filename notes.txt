@@ -1,0 +1,53 @@
+Creating a To Do app
+
+-[x] set up work space
+    -[x] database.sql file
+    -[x] create a database in postico
+        [x] create a table
+            [x] id
+            [x] task
+            [x] complete
+            [x] date?
+        [x] insert into table
+    -[x] set up .gitignore
+        [x] .DS_Store
+        [x] node_modules/
+        [x] logs, *.log, npm-debug.log*
+
+    -[x] start up the server
+        [x] npm init --yes
+        [x] npm install express & pg
+        [x] set up body-parser
+        [x] static files
+        [x] open port
+
+    -[x] set up pool module
+
+    -[x] set up route folder
+        [x] require express
+        [x] set up express.Router()
+        [x] require pool module
+
+    -[x] set up public folder
+        [x] scripts with client.js
+        [x] styles with style.css
+        [x] vendors with jquery and bootstrap?
+        [x] set up index.html file 
+
+-[] Thinking about App logic set up
+    -[] be able to create a task and store it in the db 
+        [] will need a POST route and POST function
+        [] will need to INSERT INTO db 
+    -[] each task will need a completed and delete function 
+        [] delete route and DELETE from db
+        [] will need a PUT route and UPDATE db 
+            [] if completed visual should change 
+
+-[] styling 
+    [] background color of page
+    [] font family and size
+    [] denote completed tasks
+
+-[] Stretch Goals (worry about later)
+
+
