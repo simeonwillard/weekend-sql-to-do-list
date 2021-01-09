@@ -42,6 +42,11 @@ Creating a To Do app
         [] delete route and DELETE from db
         [] will need a PUT route and UPDATE db 
             [] if completed visual should change 
+    
+    [] index.html
+        [] input for a task
+        [] button to submit task
+        [] table to append to
 
 -[] styling 
     [] background color of page
