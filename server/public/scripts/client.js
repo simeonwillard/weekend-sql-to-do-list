@@ -10,7 +10,33 @@ $(document).ready(function () {
 // set up all click listeners
 function clickListeners(){
     console.log('in clickListeners');
+
+    $('#submitBtn').on('click', addTask);
 }// end clickListeners
+
+
+function addTask(){
+    console.log('in addTask');
+
+    const dataToSend = {
+        task: $('#taskIn').val()
+    };
+
+    console.log('adding task: ', dataToSend);
+
+    $.ajax({
+        method: 'POST',
+        url: '/todo-list',
+        data: dataToSend
+    }).then(function (response) {
+        console.log(response);
+        getTasks();
+    }).catch(function (error) {
+        console.log('error in task post', error);
+    });
+}
+
+
 
 function getTasks(){
     console.log('in getTasks');

@@ -20,5 +20,25 @@ router.get('/', (req, res) => {
     });
 });
 
+// adding tasks to db
+router.post('/', (req, res) => {
+    console.log(req.body);
+
+    const newTask = req.body;
+
+    const queryText = `
+        INSERT INTO "list" ("task")
+        VALUES ($1);
+    `;
+
+    pool.query(queryText, [newTask.task])
+    .then((result) => {
+        res.sendStatus(201);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    });
+});
+
 
 module.exports = router;
