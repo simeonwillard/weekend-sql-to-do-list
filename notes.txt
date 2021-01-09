@@ -35,11 +35,11 @@ Creating a To Do app
         [x] set up index.html file 
 
 -[] Thinking about App logic set up
-    -[] be able to create a task and store it in the db 
-        [] will need a POST route and POST function
-        [] will need to INSERT INTO db 
+    -[x] be able to create a task and store it in the db 
+        [x] will need a POST route and POST function
+        [x] will need to INSERT INTO db 
     -[] each task will need a completed and delete function 
-        [] delete route and DELETE from db
+        [x] delete route and DELETE from db
         [] will need a PUT route and UPDATE db 
             [] if completed visual should change 
     

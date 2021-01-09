@@ -40,6 +40,27 @@ router.post('/', (req, res) => {
     });
 });
 
+// Updating db with completed status
+router.put('/:id', (req, res) => {
+    const id = req.params.id;
+
+    const completedStatus = req.body.finished;
+    console.log(completedStatus);
+
+    const queryText = `UPDATE "list" SET "completed" = $1 WHERE "id" = $2;`;
+
+    pool.query(queryText, [completedStatus, id])
+    .then((result) => {
+        console.log(result);
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    })
+})
+
+
+
 // deleting tasks from db
 router.delete('/:id', (req, res) => {
     let id = req.params.id;
