@@ -43,10 +43,10 @@ Creating a To Do app
         [] will need a PUT route and UPDATE db 
             [] if completed visual should change 
     
-    [] index.html
-        [] input for a task
-        [] button to submit task
-        [] table to append to
+    [x] index.html
+        [x] input for a task
+        [x] button to submit task
+        [x] table to append to
 
 -[] styling 
     [] background color of page

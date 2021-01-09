@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
+// connects to db
 const pool = require('../modules/pool.js');
 
+// gets table from db
 router.get('/', (req, res) => {
     let queryText = `
         SELECT * FROM "list" ORDER BY "id";
