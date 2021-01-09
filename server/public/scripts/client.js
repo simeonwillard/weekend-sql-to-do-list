@@ -12,12 +12,14 @@ function clickListeners(){
     console.log('in clickListeners');
 
     $('#submitBtn').on('click', addTask);
+    $('#list').on('click', '.deleteBtn', deleteTask);
 }// end clickListeners
 
-
+// function to add a task to the DOM and db
 function addTask(){
     console.log('in addTask');
 
+    // sending input value to server
     const dataToSend = {
         task: $('#taskIn').val()
     };
@@ -34,10 +36,9 @@ function addTask(){
     }).catch(function (error) {
         console.log('error in task post', error);
     });
-}
+} // end addTask
 
-
-
+// function to get data from our db and display it on the DOM
 function getTasks(){
     console.log('in getTasks');
 
@@ -60,3 +61,20 @@ function getTasks(){
         })
     });
 } // end getTasks
+
+function deleteTask(){
+    console.log('clicked delete');
+
+    const id = $(this).closest('tr').data('id');
+    console.log(id);
+
+    $.ajax({
+        type: 'DELETE',
+        url: `/todo-list/${id}`
+    }).then(function (response) {
+        getTasks();
+    }).catch(function (error) {
+        alert('error in deleting task');
+    })
+    
+}
