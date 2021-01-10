@@ -38,20 +38,20 @@ Creating a To Do app
     -[x] be able to create a task and store it in the db 
         [x] will need a POST route and POST function
         [x] will need to INSERT INTO db 
-    -[] each task will need a completed and delete function 
+    -[x] each task will need a completed and delete function 
         [x] delete route and DELETE from db
-        [] will need a PUT route and UPDATE db 
-            [] if completed visual should change 
+        [x] will need a PUT route and UPDATE db 
+            [x] if completed visual should change 
     
     [x] index.html
         [x] input for a task
         [x] button to submit task
         [x] table to append to
 
--[] styling 
-    [] background color of page
-    [] font family and size
-    [] denote completed tasks
+-[x] styling 
+    [x] background color of page
+    [x] font family and size
+    [x] denote completed tasks
 
 -[] Stretch Goals (worry about later)
 

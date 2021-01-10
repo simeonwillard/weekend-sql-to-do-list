@@ -37,6 +37,8 @@ function addTask() {
     }).catch(function (error) {
         console.log('error in task post', error);
     });
+
+    $('#taskIn').val('');
 } // end addTask
 
 // function to get data from our db and display it on the DOM

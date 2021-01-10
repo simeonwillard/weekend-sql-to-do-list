@@ -1,3 +1,24 @@
+header {
+    text-align: center;
+    text-decoration: underline;
+    color: lightblue;
+    padding: 30px;
+}
+
+#top {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+
 .complete {
-    background-color: lightgreen;
+    background-color: lightblue;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    background-color: lightslategrey;
 }
