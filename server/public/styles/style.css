@@ -2,16 +2,13 @@ header {
     text-align: center;
     text-decoration: underline;
     color: lightblue;
-    padding: 30px;
-}
-
-#top {
     padding: 20px;
-    text-align: center;
-    
 }
 
-
+#firstSection {
+    text-align: center;
+    padding-bottom: 40px;
+}
 
 .complete {
     background-color: lightblue;
@@ -19,6 +16,29 @@ header {
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
+    font-size: x-large;
     background-color: lightslategrey;
+}
+
+.deleteBtn {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#submitBtn {
+    border-radius: 5px;
+    font-size: large;
+}
+
+#list {
+    text-align: center;
+}
+
+.glyphicon{ 
+    color: maroon;
+}
+
+#taskIn {
+    border-radius: 5px;
+    font-size: large;
 }

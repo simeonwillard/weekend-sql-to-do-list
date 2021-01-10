@@ -58,7 +58,7 @@ function getTasks() {
                 <tr class="tableRows" data-id="${item.id}">
                     <td data-status="${item.completed}"><input type="checkbox" class="check" ></td>
                     <td>${item.task}</td>
-                    <td><button class="deleteBtn">Delete</button></td>
+                    <td><button class="deleteBtn btn-sm"><span class="glyphicon glyphicon-trash"></span></button></td>
                 </tr>
             `);
         })
